@@ -38,7 +38,7 @@ public class LikeDaoSql implements DAO<Like> {
                 int likeId = resultSet.getInt("id");
                 int userId = resultSet.getInt("userid");
                 int userIdMarked = resultSet.getInt("marked_userid");
-                boolean isLike = resultSet.getBoolean("islike");
+                int isLike = resultSet.getInt("islike");
                 LocalDateTime likeTime = resultSet.getTimestamp("checktime").toLocalDateTime();
                 list.add(new Like(likeId, userId, userIdMarked, isLike, likeTime));
             }
@@ -77,14 +77,14 @@ public class LikeDaoSql implements DAO<Like> {
                 PreparedStatement ps = con.prepareStatement(insertQuery);
                 ps.setInt(1, item.getUserId());
                 ps.setInt(2, item.getUserIdMarked());
-                ps.setBoolean(3, item.isLike());
+                ps.setInt(3, item.isLike());
                 ps.executeUpdate();
                 ps.close();
             } else {
                 String updateQuery = "UPDATE likedlist SET islike=?, checktime = now() WHERE userid='"
                         + item.getUserId() + "' AND marked_userid='" + item.getUserIdMarked() + "'";
                 PreparedStatement ps = con.prepareStatement(updateQuery);
-                ps.setBoolean(1, item.isLike());
+                ps.setInt(1, item.isLike());
                 ps.executeUpdate();
                 ps.close();
             }
@@ -120,7 +120,7 @@ public class LikeDaoSql implements DAO<Like> {
                         new Like(resultSet.getInt("id")
                                 , resultSet.getInt("userid")
                                 , resultSet.getInt("marked_userid")
-                                , resultSet.getBoolean("islike")
+                                , resultSet.getInt("islike")
                                 , resultSet.getTimestamp("checktime").toLocalDateTime())
                 );
             }
