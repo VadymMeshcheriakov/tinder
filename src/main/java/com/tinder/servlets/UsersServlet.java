@@ -76,7 +76,7 @@ public class UsersServlet extends HttpServlet {
                 wholeProcess.getPersistence().getLikeService().update(new Like(
                         userLoggedId,
                         currUser.getUserId(),
-                        true
+                        1
                 ));
             }
         } else if (null != req.getParameter("dislike")) {
@@ -85,7 +85,7 @@ public class UsersServlet extends HttpServlet {
                 wholeProcess.getPersistence().getLikeService().update(new Like(
                         userLoggedId,
                         currUser.getUserId(),
-                        false
+                        -1
                 ));
             }
         } else {

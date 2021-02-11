@@ -7,23 +7,23 @@ public class Like {
     private int likeId;
     private int userId;
     private int userIdMarked;
-    private boolean isLike;
+    private int isLike;
     private LocalDateTime likeTime;
 
-    public Like(int userId, int userIdMarked, boolean isLike) {
+    public Like(int userId, int userIdMarked, int isLike) {
         this.userId = userId;
         this.userIdMarked = userIdMarked;
         this.isLike = isLike;
     }
 
-    public Like(int userId, int userIdMarked, boolean isLike, LocalDateTime likeTime) {
+    public Like(int userId, int userIdMarked, int isLike, LocalDateTime likeTime) {
         this.userId = userId;
         this.userIdMarked = userIdMarked;
         this.isLike = isLike;
         this.likeTime = likeTime;
     }
 
-    public Like(int likeId, int userId, int userIdMarked, boolean isLike, LocalDateTime likeTime) {
+    public Like(int likeId, int userId, int userIdMarked, int isLike, LocalDateTime likeTime) {
         this.likeId = likeId;
         this.userId = userId;
         this.userIdMarked = userIdMarked;
@@ -55,11 +55,11 @@ public class Like {
         this.userIdMarked = userIdMarked;
     }
 
-    public boolean isLike() {
+    public int isLike() {
         return isLike;
     }
 
-    public void setLike(boolean like) {
+    public void setLike(int like) {
         isLike = like;
     }
 
