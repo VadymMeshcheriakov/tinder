@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DbConnection {
 
-    private String path = "postgres://dldplmkdamdbnf:4d5090f9d6bd25656771cf8af9d5cb1dbf33d69934e58f3bda85a5e7a32b4cbc@ec2-52-7-168-69.compute-1.amazonaws.com:5432/d113dena0hmoph";
-    private String username = "dldplmkdamdbnf";
-    private String password = "4d5090f9d6bd25656771cf8af9d5cb1dbf33d69934e58f3bda85a5e7a32b4cbc";
+    private String path = "jdbc:postgresql://ec2-52-7-168-69.compute-1.amazonaws.com:5432/d113dena0hmoph?password=4d5090f9d6bd25656771cf8af9d5cb1dbf33d69934e58f3bda85a5e7a32b4cbc&sslmode=require&user=dldplmkdamdbnf";
+    private String username = "lidiya.park@gmail.com";
+    private String password = "Anna-26062010";
 
     private Connection connection = null;
 
