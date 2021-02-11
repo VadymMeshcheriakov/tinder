@@ -53,7 +53,7 @@
         </div>
     </div>
 </#if>
-    <p class="mt-5 mb-3 text-muted">&copy; FS7 Group (VOM) 2019</p>
+    <p class="mt-5 mb-3 text-muted">&copy; FS12 Group 2021</p>
 </form>
 
 </body>
