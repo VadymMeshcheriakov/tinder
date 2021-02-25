@@ -1,3 +1,4 @@
+FS 12 Vadym Meshcheriakov
 ## The task
 
 Create MVP dating app Tinder

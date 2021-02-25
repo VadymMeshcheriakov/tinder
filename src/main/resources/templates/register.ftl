@@ -27,9 +27,7 @@
 <form class="form-signin" method="post">
     <img class="mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo-Tinder.svg/1200px-Logo-Tinder.svg.png" alt="" width="150"
          height="75">
-    <!--<div class="avatar">-->
-    <!--<img bk=#70c5c0 src="/assets/img/avatar.png" alt="Avatar">-->
-    <!--</div>-->
+
     <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
     <label for="firstName" class="sr-only">First Name</label>
     <input type="text" name="firstname" id="firstName" class="form-control" placeholder="First Name"
