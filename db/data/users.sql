@@ -1,0 +1,4 @@
+INSERT INTO public.users (id, login, firstname, lastname, password, photolink) VALUES (1,'lp2@gmail.com','Vadym','Meshcheriakov','1111','https://www.datingscout.com/b6/image/upload/ds/upload/reviews/ENG/tinder/tinder-own-profile.jpg');
+INSERT INTO public.users (id, login, firstname, lastname, password, photolink) VALUES (2,'lp@gmail.com','Kiryl','Ivanov','1111','https://sefon.pro/img/artist_photos/rag-n-bone-man.jpg');
+INSERT INTO public.users (id, login, firstname, lastname, password, photolink) VALUES (3,'lp3@gmail.com','Konstantin','Rozhkov','1111','https://ru.dermosil.ee/storage/D0DCB1D3E6009494550EE62644C8044CA190B6192F38D7052A97530651105B81/aedbabfa258d417792d474acc12280fe/jpg/media/4df8db6b20f940a698a06ed4e292cdd3/Man.jpg');
+INSERT INTO public.users (id, login, firstname, lastname, password, photolink) VALUES (4,'lp4@gmail.com','Vasya','Petrov','1111','https://i.pinimg.com/originals/7e/34/fc/7e34fc3ce65d1891d3af004795b34462.jpg');
